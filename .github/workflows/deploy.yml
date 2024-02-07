@@ -22,7 +22,13 @@ jobs:
         with:
           branch: gh-pages
           folder: build
-          
+
+      - name: Налаштування Git
+        run: |
+          git config --global user.name 'AndrijAyzy'
+          git config --global user.email 'rahnandrey1712@gmail.com'
+
+
       - name: Налаштування Git
         run: |
           git remote rm origin
